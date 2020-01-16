@@ -150,7 +150,7 @@ Declare GOPATH and clone inside it:
 jobs:
   test-gopath:
     env:
-      GOPATH: ${{ runner.workspace }}
+      GOPATH: ${{ github.workspace }}
       GO111MODULE: off
     steps:
     - name: Checkout code
